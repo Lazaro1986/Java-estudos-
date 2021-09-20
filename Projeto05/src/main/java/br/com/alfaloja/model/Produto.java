@@ -21,7 +21,7 @@ public class Produto {
 	private String destaque;
 	private Float valor;
 	/*
-	 * como as variáveis estão com o mesmo nome das colunas na
+	 * como os atributos estão com o mesmo nome das colunas na
 	 * tabela no banco de dados, não será necessário a annotation,
 	 * caso estivessem com o nome diferente deveria ser adicionado
 	 * uma annotation informando o nome da coluna referente 
