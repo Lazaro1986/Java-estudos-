@@ -18,9 +18,10 @@ public class ProdutoController {
 	private ProdutoDAO daopro;
 	
 	@RequestMapping(value="/listar", method=RequestMethod.GET)
-	public String listarProdutos() {
+	public ModelAndView listarProdutos() {
 		List<Produto> lstpro = daopro.findAll();
-		return "list";
+		ModelAndView mv = new ModelAndView("list");
+		return mv;
 	}
 	
 	@RequestMapping(value="/inserir", method=RequestMethod.GET)
